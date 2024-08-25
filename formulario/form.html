@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="short icon" href="../imagens/Logo/logoPng.png">
+    <link rel="stylesheet" type="text/css" href="../estilo/form.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Indie+Flower&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vikin Pets</title>
+    <script type="text/javascript" src="../script/site.js"> </script>
+</head>
+
+<body>
+    <header class="principal" id="body">
+        <nav>
+            <li><a href="D:\ADS2024\WEB\Javascript\Trabalho final\index.html">Home</a></li>
+            <li><a>ONGS Parceiras</a>
+                <ul>
+                    <li><a target="_blank" href="https://www.suipa.org.br/">Suipa</a></li>
+                    <li><a target="_blank" href="https://amparanimal.org.br/">Ampara Animal</a></li>
+                    <li><a target="_blank" href="http://www.caosemdono.com.br/">Cão sem dono</a></li>
+                    <li><a target="_blank" href="https://institutocaramelo.org/">Inst. Luísa Mell</a></li>
+                </ul>
+            </li>
+            <li><a href="../paginas/contatos.html">Contato</a></li>
+            <li><a href="../paginas/animais.html">Pets disponiveis!</a></li>
+        </nav>
+
+        <figure>
+            <img class="logo" src="../imagens/Logo/logoPng.png" alt="Logo da empresa">
+        </figure>
+    </header>
+
+
+    <main>
+        <center>
+            <h1>Você está quase lá! Acesse o teste e encontre seu novo melhor amigo!</h1>
+
+
+            <fieldset>
+                <form method="post">
+                    <h2 class="destaque">Vamos começar o questionário!</h2>
+                    <h2>Estilo de vida:</h2>
+                    
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome">
+                    <br>
+                    <label for="data">Data de nascimento:</label><br>
+                    <input type="date" id="data" name="data">
+                    <br>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email">
+                    <br>
+                    <label for="telefone">Telefone:</label><br>
+                    <input type="tel" id="telefone" name="telefone">
+                    <br>
+                    <label for="moradia">Você mora em um lugar:</label><br>
+                    <select name="moradia" id="moradia">
+                        <option value=""></option>
+                        <option value="grande">Em um lugar grande!</option>
+                        <option value="pequeno">Em um lugar pequeno!</option>
+                    </select>
+                    <br>
+                    <label for="custo">Quanto eu pretento gastar com meu pet:</label><br>
+                    <input type="number" id="custo" name="custo">
+                    <br>
+                    <p id="res"></p>
+                    <br>
+                    <h3 id="res2"></h3>
+                    <figure id="foto">
+                        <img id="imagem" src="Interrogacao.png" alt="">
+                    </figure>
+
+                    <center>
+                    <input type="button" class="botao" value="Enviar" onclick="Formulario(this.form)">
+                    <input type="reset" class="botao"  value="Limpar" onclick="Limpar(this.form)">
+                </center>
+                    <br>
+                </form>
+                
+            </fieldset>
+        </center>
+    </main>
+    <footer>
+        <br>
+        <hr width="80%">
+        <center>
+            <center>Desenvolvido por Victoria Benfica em Agosto de 2024</center>
+        </center>
+    </footer>
+
+</body>
+
+</html>
